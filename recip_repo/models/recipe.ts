@@ -23,6 +23,7 @@ enum UNIT_WEIGHT {
 
 enum UNIT_UTIL {
     PRISE = 'Prise',
+    STUCK = 'Stück',
     TL = 'TL',
     EL = 'EL'
 }
@@ -33,4 +34,5 @@ type Ingredient = {
     amount: number;
 }
 
-export type { Recipe, Ingredient, UNIT_UTIL, UNIT_WEIGHT, UNIT_VOLUME};
+export type { Recipe, Ingredient};
+export { UNIT_UTIL, UNIT_VOLUME, UNIT_WEIGHT};
